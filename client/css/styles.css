@@ -1,0 +1,272 @@
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+/* Heading */
+.big-heading {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 0.7rem;
+}
+
+.row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.gif {
+  padding-top: 2rem;
+  margin: auto;
+}
+
+/* Container */
+.container-fluid {
+  padding: 5% 10%;
+}
+
+/* Sections */
+.color-section {
+  background-color: #f9f7f7;
+  color: black;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0.8rem 0 0.8rem;
+  border-bottom: 1px solid #dbe2ef;
+}
+
+.navbar-inner {
+  background: rgba(249, 247, 247, 0.5);
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+/* Introduction */
+.introduction-img {
+  border: 2px solid #dbe2ef;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 3%
+  margin-left:5%;
+  margin-right: 10%;
+  max-width: 60%;
+  max-length: 60%;
+}
+
+#Introduction.container-fluid {
+  padding: 2% 2%;
+}
+
+#Introduction.row {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.introduction-title {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 5%;
+  color: black;
+}
+
+.introduction-click {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+  color: black;
+}
+
+.introduction-list {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.introduction-location_and_date {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 0%;
+}
+
+.introduction-list-tab {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+}
+
+/* Projects */
+.Projects-head {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.project-click {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 0;
+  color: black;
+}
+
+#Projects.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.Projects-row {
+  padding: 0;
+  margin: 0 5% 0 5%;
+}
+
+.Projects-img {
+  border: 2px solid #dbe2ef;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+
+.Projects-title {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  color: black;
+}
+
+.Projects-time {
+  font-family: "Montserrat";
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.Projects-list {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Gallery */
+#Gallery.container-fluid {
+  padding: 1%;
+  margin: 0;
+}
+
+.Gallery-row {
+  padding: 0;
+  margin: 0;
+}
+
+.Gallery-head {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.Gallery-img img {
+  padding: 10px 0 10px 0;
+  transition: transform .8s, visibility .8s ease-in;
+}
+
+.Gallery-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Footer */
+#footer {
+  line-height: 1.5;
+  padding: 1%;
+}
+
+.footer-img {
+  padding: 10px 10px;
+  color: black;
+}
+
+.footer-img:hover {
+  transform: scale(1.5);
+  color: black;
+  text-decoration: none;
+}
+
+.copy-right {
+  margin-top: 10px;
+}
+
+@media (max-width:992px) {
+  .Projects-row {
+    margin: 0;
+  }
+
+  .Projects-list {
+    font-family: "Montserrat";
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .introduction-img {
+    border: 2px solid #dbe2ef;
+    border-radius: 20px;
+    margin: auto;
+    heigh: 300px;
+    width: 300px;
+  }
+}
+
+#newPage.container-fluid {
+  padding: 2rem 10%;
+}
+
+.pdf-click {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 0rem;
+  margin-bottom: 0;
+  color: black;
+}
+
+.webgl{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

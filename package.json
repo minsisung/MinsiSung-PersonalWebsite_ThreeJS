@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config ./src/client/webpack.dev.js",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d ./dist/client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +14,7 @@
     "@types/dat.gui": "^0.7.7",
     "@types/three": "^0.141.0",
     "dat.gui": "^0.7.9",
+    "gh-pages": "^4.0.0",
     "three": "^0.142.0",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
@@ -21,8 +22,5 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
-  },
-  "dependencies": {
-    "gh-pages": "^4.0.0"
   }
 }

@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 import Stats from 'three/examples/jsm/libs/stats.module'
 import { GUI } from 'dat.gui'
-const canvas = document.querySelector('canvas.webgl') as HTMLElement
+const container = document.getElementById( 'container' ) as HTMLElement
 
 const scene = new THREE.Scene()
 scene.add(new THREE.AxesHelper(5))
@@ -20,11 +20,9 @@ const camera = new THREE.PerspectiveCamera(
 )
 camera.position.set(0.8, 1.4, 1.0)
 
-// const renderer = new THREE.WebGLRenderer()
-const renderer = new THREE.WebGLRenderer({
-    canvas: canvas
-})
+const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth*0.8, window.innerHeight*0.8)
+container.appendChild( renderer.domElement );
 // document.body.appendChild(renderer.domElement)
 
 const controls = new OrbitControls(camera, renderer.domElement)
@@ -124,7 +122,8 @@ function onWindowResize() {
 
 const stats = Stats()
 // document.body.appendChild(stats.dom)
-canvas.appendChild(stats.domElement)
+// canvas.appendChild(stats.dom)
+container.appendChild( stats.domElement );
 
 const animations = {
     default: function () {
@@ -154,7 +153,8 @@ const setAction = (toAction: THREE.AnimationAction) => {
 }
 
 const gui = new GUI()
-canvas.appendChild(gui.domElement)
+container.appendChild( gui.domElement );
+
 const animationsFolder = gui.addFolder('Animations')
 animationsFolder.open()
 
